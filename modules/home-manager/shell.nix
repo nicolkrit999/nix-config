@@ -14,7 +14,8 @@
     };
 
     initContent = ''
-      # Additional shell configuration
+      # Enable direnv
+      eval "$(direnv hook zsh)"
     '';
   };
 

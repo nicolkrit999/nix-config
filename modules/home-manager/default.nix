@@ -19,6 +19,8 @@
 
     # Home packages
     packages = with pkgs; [
+      direnv
+      nix-direnv
       vscode
     ];
   };

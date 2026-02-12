@@ -5,12 +5,15 @@
     enable = true;
     profiles.default = {
       extensions = with pkgs.vscode-extensions; [
+        # Direnv
+        mkhl.direnv
+
         # Nix
         jnoortheen.nix-ide
         
         # Python
         ms-python.python
-        vscode-extension-charliermarsh-ruff
+        charliermarsh.ruff
         # ms-toolsai.jupyter
 
         # Java
