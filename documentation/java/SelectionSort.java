@@ -1,4 +1,4 @@
-public class Sort {
+public class SelectionSort {
 
     /**
      * Sorts an array using selection sort algorithm.
