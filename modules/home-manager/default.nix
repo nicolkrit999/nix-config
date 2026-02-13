@@ -19,8 +19,7 @@
 
     # Home packages
     packages = with pkgs; [
-      nixfmt-rfc-style # Nix formatter binary
-      vscode
+      nixfmt-rfc-style
     ];
   };
 
