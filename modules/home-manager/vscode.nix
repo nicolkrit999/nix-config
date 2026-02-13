@@ -14,7 +14,7 @@
         # Python
         ms-python.python
         charliermarsh.ruff
-        # ms-toolsai.jupyter
+        ms-toolsai.jupyter
 
         # Java
         # vscjava.vscode-java-pack

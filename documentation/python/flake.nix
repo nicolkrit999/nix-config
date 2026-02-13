@@ -5,7 +5,8 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-25.05-darwin";
   };
 
-  outputs = { self, nixpkgs }:
+  outputs =
+    { self, nixpkgs }:
     let
       system = "aarch64-darwin";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -13,9 +14,12 @@
     {
       devShells.${system}.default = pkgs.mkShell {
         packages = [
-          (pkgs.python3.withPackages (pypkgs: with pypkgs; [
-            numpy
-          ]))
+          (pkgs.python3.withPackages (
+            pypkgs: with pypkgs; [
+              numpy
+              ipykernel
+            ]
+          ))
         ];
 
         shellHook = ''
