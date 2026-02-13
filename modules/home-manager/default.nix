@@ -20,6 +20,9 @@
     # Home packages
     packages = with pkgs; [
       nixfmt-rfc-style
+      syncthing
+      nodejs
+      rectangle
     ];
   };
 

@@ -14,6 +14,7 @@
   # System-wide packages
   environment.systemPackages = with pkgs; [
     vim
+    git
   ];
 
   # Set primary user for system defaults
