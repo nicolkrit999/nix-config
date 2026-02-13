@@ -11,7 +11,7 @@
   home = {
     username = username;
     homeDirectory = "/Users/${username}";
-    
+
     # This value determines the Home Manager release that your configuration is
     # compatible with. This helps avoid breakage when a new Home Manager release
     # introduces backwards incompatible changes.
@@ -19,8 +19,6 @@
 
     # Home packages
     packages = with pkgs; [
-      direnv
-      nix-direnv
       nixfmt-rfc-style # Nix formatter binary
       vscode
     ];

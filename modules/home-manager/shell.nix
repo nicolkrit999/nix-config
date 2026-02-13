@@ -12,12 +12,12 @@
       ll = "ls -la";
       update = "sudo darwin-rebuild switch --flake ~/nix-config";
     };
-    };
+  };
 
-    initContent = ''
-      # Enable direnv
-      eval "$(direnv hook zsh)"
-    '';
+  programs.direnv = {
+    enable = true;
+    enableZshIntegration = true; # Automatically adds hook to zsh
+    nix-direnv.enable = true; # Enable nix-direnv for caching
   };
 
   # Starship prompt (optional but recommended)
