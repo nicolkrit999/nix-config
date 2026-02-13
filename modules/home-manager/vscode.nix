@@ -47,6 +47,7 @@
         };
 
         # Git autofetch
+        "git.enableSmartCommit" = true;
         "git.autofetch" = true;
         "git.autofetchPeriod" = 180;
         "git.confirmSync" = false;
